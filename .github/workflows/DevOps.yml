@@ -16,11 +16,9 @@ jobs:
         run: hostname -I
       #- name: Check connectivity of Internet
       #  run: ping -c 4 -W 5 8.8.8.8
-
-  jobs:
-    lists-files:
-      runs-on: ubuntu-latest
-      steps:
-        - name: list of dir
-          run: ls -lrt
+  lists-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list of dir
+        run: ls -lrt
 
