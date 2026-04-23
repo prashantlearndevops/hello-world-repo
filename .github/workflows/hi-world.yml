@@ -15,4 +15,4 @@ jobs:
       - name: Check IP address of server
         run: hostname -I
       - name: Check connectivity of Internet
-        run: ping 8.8.8.
+        run: ping 8.8.8.8
