@@ -31,4 +31,5 @@ jobs:
           base64_var=$(echo -n "$original_var" | base64)
           echo "Original String: $original_var"
           echo "Base64 Encoded: $base64_var"
+          echo -n "$original_var" | base64
 
