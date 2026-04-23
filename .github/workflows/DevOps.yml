@@ -3,7 +3,7 @@ name: Hi Prashant
 on: [push]
 
 jobs:
-  DevOps:
+  Server-Connectivity:
     runs-on: ubuntu-latest
     steps:
       - name: Say hi
