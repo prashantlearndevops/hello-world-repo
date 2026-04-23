@@ -25,4 +25,10 @@ jobs:
         run: |
           prashant="hello pk"
           echo $prashant
+      - name: Convert string to base64
+        run: |
+          original_var="DevOps-Automation-Pipeline-Dev"
+          base64_var=$(echo -n "$original_var" | base64)
+          echo "Original String: $original_var"
+          echo "Base64 Encoded: $base64_var"
 
