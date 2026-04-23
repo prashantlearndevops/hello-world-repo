@@ -1,5 +1,5 @@
 
-name: Hi Prashant 
+name: DevOps-WorkFlow
 on: [push]
 
 jobs:
