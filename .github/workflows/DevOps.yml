@@ -21,4 +21,8 @@ jobs:
     steps:
       - name: list of dir
         run: ls -lrt
+      - name: Print prashant variable
+        run: |
+          prashant="hello pk"
+          echo $prashant
 
