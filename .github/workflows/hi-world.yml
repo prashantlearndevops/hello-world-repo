@@ -8,5 +8,7 @@ jobs:
     steps:
       - name: Say hi
         run: echo "Hi!"
-      - name: pwd
-        run: sh pwd
+      - name: Print working directory
+        run: pwd
+      - name: List directory contents
+        run: ls -la
