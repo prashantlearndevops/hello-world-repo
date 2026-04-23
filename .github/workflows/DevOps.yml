@@ -32,4 +32,9 @@ jobs:
           echo "Original String: $original_var"
           echo "Base64 Encoded: $base64_var"
           echo -n "$original_var" | base64
-
+      - name: Decode base64 string
+        run: |
+          base64_encoded="RGV2T3BzLUF1dG9tYXRpb24tUGlwZWxpbmUtRGV2"
+          decoded_var=$(echo -n "$base64_encoded" | base64 -d)
+          echo "Base64 Encoded: $base64_encoded"
+          echo "Decoded String: $decoded_var"
