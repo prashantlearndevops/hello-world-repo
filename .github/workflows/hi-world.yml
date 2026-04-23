@@ -12,3 +12,5 @@ jobs:
         run: pwd
       - name: List directory contents
         run: ls -la
+      - name: Check IP address of server
+        run: hostname -I
