@@ -16,6 +16,14 @@ jobs:
         run: hostname -I
       #- name: Check connectivity of Internet
       #  run: ping -c 4 -W 5 8.8.8.8
+      - name: Check internet connectivity using curl
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://www.google.com)
+          if [ "$response" = "200" ]; then
+            echo "You are connected to internet"
+          else
+            echo "Connection failed with HTTP status: $response"
+          fi
   lists-files:
     runs-on: ubuntu-latest
     steps:
@@ -38,3 +46,4 @@ jobs:
           decoded_var=$(echo -n "$base64_encoded" | base64 -d)
           echo "Base64 Encoded: $base64_encoded"
           echo "Decoded String: $decoded_var"
+
